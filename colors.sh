@@ -1,4 +1,7 @@
 #!/bin/sh
+# Credits: github.com/t60r
+# additional config file for bspwm
+
 background=$(xrdb -query | grep "background" | cut -f2 | sed -r 's/#//' | head -n 1)
 foreground=$(xrdb -query | grep "foreground" | cut -f2 | sed -r 's/#//' | head -n 1)
 color0=$(xrdb -query | grep "color0" | cut -f2 | sed -r 's/#//' | head -n 1)
@@ -22,4 +25,5 @@ bspc config normal_border_color "#$color8"
 bspc config active_border_color "#$color9"
 bspc config focused_border_color "#$color9"
 bspc config presel_feedback_color "#$color1"
+
 #END
