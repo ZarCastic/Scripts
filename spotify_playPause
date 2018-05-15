@@ -1,0 +1,9 @@
+#!/bin/bash
+
+playerctl status
+
+if [ $? -eq 1 ]; then
+    spotify & sleep 4;
+fi
+
+playerctl play-pause
