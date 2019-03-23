@@ -20,3 +20,5 @@ function get_pwd(){
   fi
   echo $prompt_short_dir
 }
+
+
